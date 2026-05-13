@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useAuth } from "@/lib/auth";
 
 const navLinks = [
   { to: "/academy", label: "Academy" },
@@ -9,6 +10,7 @@ const navLinks = [
 ] as const;
 
 export function SiteHeader() {
+  const { session } = useAuth();
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -30,18 +32,29 @@ export function SiteHeader() {
           </div>
         </div>
         <div className="flex items-center gap-6">
-          <Link
-            to="/contact"
-            className="hidden sm:inline text-[13px] font-medium uppercase tracking-widest"
-          >
-            Hire Talent
-          </Link>
-          <Link
-            to="/contact"
-            className="bg-foreground text-background px-6 py-3 text-[13px] font-medium uppercase tracking-widest hover:bg-primary transition-colors"
-          >
-            Apply Now
-          </Link>
+          {session ? (
+            <Link
+              to="/dashboard"
+              className="bg-foreground text-background px-6 py-3 text-[13px] font-medium uppercase tracking-widest hover:bg-primary transition-colors"
+            >
+              Dashboard
+            </Link>
+          ) : (
+            <>
+              <Link
+                to="/auth"
+                className="hidden sm:inline text-[13px] font-medium uppercase tracking-widest hover:text-primary transition-colors"
+              >
+                Sign in
+              </Link>
+              <Link
+                to="/auth"
+                className="bg-foreground text-background px-6 py-3 text-[13px] font-medium uppercase tracking-widest hover:bg-primary transition-colors"
+              >
+                Apply Now
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>
