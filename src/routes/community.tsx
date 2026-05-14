@@ -32,6 +32,7 @@ function CommunityPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <main>
 
       <section className="px-6 pt-24 pb-24 border-b border-border">
         <div className="max-w-7xl mx-auto">
@@ -91,6 +92,7 @@ function CommunityPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   );

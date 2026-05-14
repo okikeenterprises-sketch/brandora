@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -61,6 +61,7 @@ function DashboardPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <main>
 
       <section className="px-6 pt-24 pb-12 border-b border-border">
         <div className="max-w-5xl mx-auto">
@@ -102,14 +103,7 @@ function DashboardPage() {
 
           <form onSubmit={onSave} className="space-y-6">
             <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-2">Profile</div>
-            <div>
-              <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Full name</label>
-              <input
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
-              />
-            </div>
+            <FullNameField value={fullName} onChange={setFullName} />
             <button
               type="submit"
               disabled={saving}
@@ -121,7 +115,23 @@ function DashboardPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
+    </div>
+  );
+}
+
+function FullNameField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const id = useId();
+  return (
+    <div>
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Full name</label>
+      <input
+        id={id}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
+      />
     </div>
   );
 }

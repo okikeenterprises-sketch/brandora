@@ -1,0 +1,19 @@
+# Brandora
+
+> Africa's outcome-driven digital workforce pipeline — train, get placed, build the future.
+
+Brandora is a demand-driven talent engine that pairs market-aligned tech training with direct employer placement. The site covers programs, hiring, services, community work and contact pathways.
+
+## Pages
+
+- [Home](/): Overview of Brandora's pipeline, pillars and featured programs.
+- [About](/about): Vision, mission, values and the four-pillar talent ecosystem.
+- [Academy](/academy): UI/UX, Web Dev, Data, Cybersecurity and Digital Marketing tracks (3, 6 and 12 months).
+- [Job Hub](/job-hub): Placements, internships and freelance opportunities for learners and employers.
+- [Services](/services): Production services — branding, web dev, UI/UX consulting, corporate design.
+- [Community](/community): Free webinars, youth bootcamps, NGO partnerships and skill orientation.
+- [Contact](/contact): Apply to a cohort, hire from the pipeline, or start a partnership.
+
+## Optional
+
+- [Sign in](/auth): Account access for learners and employers.
