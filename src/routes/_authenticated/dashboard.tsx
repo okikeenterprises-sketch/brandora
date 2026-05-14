@@ -120,3 +120,18 @@ function DashboardPage() {
     </div>
   );
 }
+
+function FullNameField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const id = useId();
+  return (
+    <div>
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Full name</label>
+      <input
+        id={id}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
+      />
+    </div>
+  );
+}
