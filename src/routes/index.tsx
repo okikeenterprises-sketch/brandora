@@ -73,6 +73,8 @@ function Index() {
               alt="A young African tech professional in a modern workspace"
               width={1024}
               height={1280}
+              fetchPriority="high"
+              decoding="async"
               className="w-full aspect-[4/5] object-cover outline-1 -outline-offset-1 outline-black/5 rounded-sm animate-scale"
             />
             <div className="absolute -bottom-6 -left-6 bg-background p-8 border border-border shadow-2xl max-w-[240px] animate-reveal [animation-delay:500ms]">

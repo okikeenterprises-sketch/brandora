@@ -1,5 +1,5 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -142,10 +142,12 @@ function Field({ label, type = "text", value, onChange, required, minLength }: {
   required?: boolean;
   minLength?: number;
 }) {
+  const id = useId();
   return (
     <div>
-      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">{label}</label>
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">{label}</label>
       <input
+        id={id}
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}

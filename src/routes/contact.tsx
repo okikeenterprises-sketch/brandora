@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useId, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -94,36 +94,8 @@ function ContactPage() {
                 <Field label="Full name" name="name" required />
                 <Field label="Email" name="email" type="email" required />
                 {intent !== "apply" && <Field label="Company / Organisation" name="company" />}
-                {intent === "apply" && (
-                  <div>
-                    <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                      Specialisation of interest
-                    </label>
-                    <select
-                      name="specialisation"
-                      className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
-                      defaultValue=""
-                    >
-                      <option value="" disabled>Select one…</option>
-                      <option>UI/UX Design</option>
-                      <option>Web Development</option>
-                      <option>Data Analysis</option>
-                      <option>Cybersecurity</option>
-                      <option>Digital Marketing</option>
-                    </select>
-                  </div>
-                )}
-                <div>
-                  <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base resize-none"
-                  />
-                </div>
+                {intent === "apply" && <SpecialisationField />}
+                <MessageField />
                 <button
                   type="submit"
                   className="bg-primary text-primary-foreground px-8 py-4 text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-opacity"
@@ -143,16 +115,60 @@ function ContactPage() {
 }
 
 function Field({ label, name, type = "text", required }: { label: string; name: string; type?: string; required?: boolean }) {
+  const id = useId();
   return (
     <div>
-      <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
         {label}{required && " *"}
       </label>
       <input
+        id={id}
         name={name}
         type={type}
         required={required}
         className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
+      />
+    </div>
+  );
+}
+
+function SpecialisationField() {
+  const id = useId();
+  return (
+    <div>
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
+        Specialisation of interest
+      </label>
+      <select
+        id={id}
+        name="specialisation"
+        className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
+        defaultValue=""
+      >
+        <option value="" disabled>Select one…</option>
+        <option>UI/UX Design</option>
+        <option>Web Development</option>
+        <option>Data Analysis</option>
+        <option>Cybersecurity</option>
+        <option>Digital Marketing</option>
+      </select>
+    </div>
+  );
+}
+
+function MessageField() {
+  const id = useId();
+  return (
+    <div>
+      <label htmlFor={id} className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
+        Message
+      </label>
+      <textarea
+        id={id}
+        name="message"
+        rows={5}
+        required
+        className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base resize-none"
       />
     </div>
   );

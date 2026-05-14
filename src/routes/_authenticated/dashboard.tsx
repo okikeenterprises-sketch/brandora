@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { toast } from "sonner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -101,16 +101,7 @@ function DashboardPage() {
             </button>
           </div>
 
-          <form onSubmit={onSave} className="space-y-6">
-            <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-2">Profile</div>
-            <div>
-              <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">Full name</label>
-              <input
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                className="w-full bg-transparent border-b border-border focus:border-primary outline-none py-3 text-base"
-              />
-            </div>
+          <ProfileForm onSave={onSave} fullName={fullName} setFullName={setFullName} saving={saving} />
             <button
               type="submit"
               disabled={saving}
