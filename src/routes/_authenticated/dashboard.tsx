@@ -101,7 +101,9 @@ function DashboardPage() {
             </button>
           </div>
 
-          <ProfileForm onSave={onSave} fullName={fullName} setFullName={setFullName} saving={saving} />
+          <form onSubmit={onSave} className="space-y-6">
+            <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-2">Profile</div>
+            <FullNameField value={fullName} onChange={setFullName} />
             <button
               type="submit"
               disabled={saving}
