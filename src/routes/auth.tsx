@@ -56,6 +56,7 @@ function AuthPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SiteHeader />
+      <main>
       <section className="flex-1 px-6 py-24">
         <div className="max-w-md mx-auto">
           <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-6">
@@ -127,6 +128,7 @@ function AuthPage() {
           </p>
         </div>
       </section>
+      </main>
       <SiteFooter />
     </div>
   );

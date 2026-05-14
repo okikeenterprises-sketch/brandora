@@ -24,6 +24,7 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <main>
 
       <section className="px-6 pt-24 pb-16 border-b border-border">
         <div className="max-w-5xl mx-auto">
@@ -135,6 +136,7 @@ function ContactPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   );

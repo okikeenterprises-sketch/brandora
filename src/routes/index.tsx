@@ -43,6 +43,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/20">
       <SiteHeader />
+      <main>
 
       {/* Hero */}
       <section className="relative pt-20 pb-32 px-6 overflow-hidden">
@@ -204,6 +205,7 @@ function Index() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
     </div>
   );
