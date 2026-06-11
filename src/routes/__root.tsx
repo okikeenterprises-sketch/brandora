@@ -74,6 +74,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "ALKz7csuHVLNGK-E43FhcVKelbiQsxNmDDFruVpzAOM" },
       { name: "description", content: "Brandora — Africa's outcome-driven digital workforce pipeline. Train. Get placed. Build the future." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
