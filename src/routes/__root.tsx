@@ -83,8 +83,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "Brandora Academy" },
       { property: "og:description", content: "Brandora — Africa's outcome-driven digital workforce pipeline. Train. Get placed. Build the future." },
       { name: "twitter:description", content: "Brandora — Africa's outcome-driven digital workforce pipeline. Train. Get placed. Build the future." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2401abfe-4548-488f-b779-4dc6744c24aa/id-preview-b1d0b582--37b67f0e-c578-486a-b91a-0a64bf5c3b45.lovable.app-1778607207942.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2401abfe-4548-488f-b779-4dc6744c24aa/id-preview-b1d0b582--37b67f0e-c578-486a-b91a-0a64bf5c3b45.lovable.app-1778607207942.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
