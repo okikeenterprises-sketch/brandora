@@ -5,10 +5,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Brandora" },
-      { name: "description", content: "Brandora is a demand-driven talent pipeline that aligns training with real industry needs across Africa." },
-      { property: "og:title", content: "About Brandora" },
-      { property: "og:description", content: "Vision, mission and the four-pillar talent ecosystem behind Brandora." },
+      { title: "About — BrandoraX" },
+      { name: "description", content: "BrandoraX is a demand-driven talent pipeline that aligns training with real industry needs across Africa." },
+      { property: "og:title", content: "About BrandoraX" },
+      { property: "og:description", content: "Vision, mission and the four-pillar talent ecosystem behind BrandoraX." },
     ],
   }),
   component: AboutPage,
@@ -30,12 +30,12 @@ function AboutPage() {
 
       <section className="px-6 pt-24 pb-32 border-b border-border">
         <div className="max-w-5xl mx-auto">
-          <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-6">About Brandora</div>
+          <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-6">About BrandoraX</div>
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[0.95] mb-10 text-balance">
             A demand-driven pipeline, not another tech academy.
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl leading-relaxed">
-            Many people acquire skills but struggle to secure employment due to a lack of practical experience and employer access. Brandora exists to close that gap — through market-aligned training, project-based learning and an employer-integrated placement system.
+            Many people acquire skills but struggle to secure employment due to a lack of practical experience and employer access. BrandoraX exists to close that gap — through market-aligned training, project-based learning and an employer-integrated placement system.
           </p>
         </div>
       </section>
@@ -80,7 +80,7 @@ function AboutPage() {
             We build internal workforce systems — not just hiring boards.
           </h2>
           <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
-            <p>Brandora begins online-first to keep operations lean and scale efficiently. Once revenue and placement success stabilise, we'll establish a physical innovation centre.</p>
+            <p>BrandoraX begins online-first to keep operations lean and scale efficiently. Once revenue and placement success stabilise, we'll establish a physical innovation centre.</p>
             <p>Our four operational pillars — Academy, Real-Time Job Hub, Production Services and Community Empowerment — work as one system. Trainees move from learning to live projects to placements without leaving the ecosystem.</p>
             <p>Within our first two years we aim to train 500+ learners, hit a 60–65% placement rate, and partner with at least 50 employer organisations.</p>
           </div>

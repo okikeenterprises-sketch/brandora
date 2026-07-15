@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/community")({
   head: () => ({
     meta: [
-      { title: "Community — Brandora" },
+      { title: "Community — BrandoraX" },
       { name: "description", content: "Free webinars, youth bootcamps, NGO partnerships and skill-orientation programs expanding digital opportunity across Africa." },
-      { property: "og:title", content: "Brandora Community" },
+      { property: "og:title", content: "BrandoraX Community" },
       { property: "og:description", content: "Educate. Engage. Convert. Transform." },
     ],
   }),
@@ -41,7 +41,7 @@ function CommunityPage() {
             Educate. Engage. Convert. Transform.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            The community arm is how Brandora reaches people long before they apply — and stays with them long after they're placed.
+            The community arm is how BrandoraX reaches people long before they apply — and stays with them long after they're placed.
           </p>
         </div>
       </section>

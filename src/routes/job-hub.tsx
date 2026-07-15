@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/job-hub")({
   head: () => ({
     meta: [
-      { title: "Job Hub — Brandora" },
-      { name: "description", content: "Real-time placements, internships and freelance projects connecting Brandora talent to startups, SMEs and corporate teams." },
-      { property: "og:title", content: "Brandora Job Hub" },
+      { title: "Job Hub — BrandoraX" },
+      { name: "description", content: "Real-time placements, internships and freelance projects connecting BrandoraX talent to startups, SMEs and corporate teams." },
+      { property: "og:title", content: "BrandoraX Job Hub" },
       { property: "og:description", content: "Hire pre-vetted African digital talent or get placed into your next role." },
     ],
   }),
@@ -17,14 +17,14 @@ export const Route = createFileRoute("/job-hub")({
 const learnerOffers = [
   { t: "Internship Placements", d: "Structured 3–6 month internships with vetted partner companies." },
   { t: "Apprenticeship Matching", d: "Long-term roles with senior mentorship inside operating teams." },
-  { t: "Freelance Allocation", d: "Paid project work routed through the Brandora hub." },
+  { t: "Freelance Allocation", d: "Paid project work routed through the BrandoraX hub." },
   { t: "Direct Job Postings", d: "Employer-listed roles with priority access for graduates." },
 ];
 
 const employerOffers = [
   { t: "Pre-Vetted Pipeline", d: "Hire from a continuously trained pool — not a cold résumé pile." },
   { t: "Project Trial Hires", d: "Run a paid project with a candidate before you commit." },
-  { t: "Custom Corporate Training", d: "Upskill your existing team using Brandora curriculum and mentors." },
+  { t: "Custom Corporate Training", d: "Upskill your existing team using BrandoraX curriculum and mentors." },
   { t: "Placement Success Manager", d: "A dedicated point of contact for every partner organisation." },
 ];
 
@@ -41,7 +41,7 @@ function JobHubPage() {
             Where trained talent meets real opportunity.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Brandora's job hub is the live connective tissue between graduates, internal projects and external employers.
+            BrandoraX's job hub is the live connective tissue between graduates, internal projects and external employers.
           </p>
         </div>
       </section>
@@ -90,7 +90,7 @@ function JobHubPage() {
               "Application & specialisation selection",
               "Structured training and project-based learning",
               "Performance evaluation and portfolio review",
-              "Brandora WorkLab — supervised live projects",
+              "BrandoraX WorkLab — supervised live projects",
               "Employer matching, shortlisting and interviews",
               "Job deployment and ongoing alumni support",
             ].map((step, i) => (

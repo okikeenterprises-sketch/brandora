@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/academy")({
   head: () => ({
     meta: [
-      { title: "Academy — Brandora" },
+      { title: "Academy — BrandoraX" },
       { name: "description", content: "Intensive 3, 6 and 12-month tracks in UI/UX, Web Development, Data Analysis, Cybersecurity and Digital Marketing." },
-      { property: "og:title", content: "Brandora Academy" },
+      { property: "og:title", content: "BrandoraX Academy" },
       { property: "og:description", content: "Project-based tracks designed to take you from beginner to job-ready professional." },
     ],
   }),
@@ -33,7 +33,7 @@ const includes = [
   "Portfolio development and case studies",
   "Career readiness training (CV, interview, communication)",
   "Live employer matching support",
-  "Lifetime access to the Brandora job board",
+  "Lifetime access to the BrandoraX job board",
 ];
 
 function AcademyPage() {

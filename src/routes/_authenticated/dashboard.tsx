@@ -9,8 +9,8 @@ import { supabase } from "@/integrations/supabase/client";
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — Brandora" },
-      { name: "description", content: "Your Brandora dashboard." },
+      { title: "Dashboard — BrandoraX" },
+      { name: "description", content: "Your BrandoraX dashboard." },
     ],
   }),
   component: DashboardPage,
@@ -71,7 +71,7 @@ function DashboardPage() {
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
             {role === "employer"
-              ? "Manage your hiring pipeline and shortlist Brandora-trained talent."
+              ? "Manage your hiring pipeline and shortlist BrandoraX-trained talent."
               : role === "admin"
               ? "Admin workspace. Manage cohorts, employers and partners."
               : "Track your cohort, applications and placement journey."}

@@ -6,10 +6,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Brandora" },
-      { name: "description", content: "Apply to a Brandora cohort, hire from our talent pipeline, or start a partnership conversation." },
-      { property: "og:title", content: "Contact Brandora" },
-      { property: "og:description", content: "Reach out — apply, hire or partner with Brandora." },
+      { title: "Contact — BrandoraX" },
+      { name: "description", content: "Apply to a BrandoraX cohort, hire from our talent pipeline, or start a partnership conversation." },
+      { property: "og:title", content: "Contact BrandoraX" },
+      { property: "og:description", content: "Reach out — apply, hire or partner with BrandoraX." },
     ],
   }),
   component: ContactPage,
@@ -84,7 +84,7 @@ function ContactPage() {
               <div className="border border-primary p-10">
                 <div className="font-mono text-xs text-primary mb-4">RECEIVED</div>
                 <h2 className="text-2xl font-bold mb-3">Thanks — we'll be in touch.</h2>
-                <p className="text-muted-foreground">A Brandora team member will respond within 48 hours.</p>
+                <p className="text-muted-foreground">A BrandoraX team member will respond within 48 hours.</p>
               </div>
             ) : (
               <form

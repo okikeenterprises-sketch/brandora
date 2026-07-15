@@ -5,9 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Brandora" },
-      { name: "description", content: "Branding, web development, UI/UX consulting and corporate design — delivered by Brandora's top graduates under senior supervision." },
-      { property: "og:title", content: "Brandora Production Services" },
+      { title: "Services — BrandoraX" },
+      { name: "description", content: "Branding, web development, UI/UX consulting and corporate design — delivered by BrandoraX's top graduates under senior supervision." },
+      { property: "og:title", content: "BrandoraX Production Services" },
       { property: "og:description", content: "A live agency arm powered by our top academy talent." },
     ],
   }),
@@ -34,7 +34,7 @@ function ServicesPage() {
             Agency-grade work, powered by our pipeline.
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Brandora's production arm delivers real client work — supervised by senior leads and built by our top graduates. Revenue funds the academy. Students gain live experience. Clients get sharper, faster delivery.
+            BrandoraX's production arm delivers real client work — supervised by senior leads and built by our top graduates. Revenue funds the academy. Students gain live experience. Clients get sharper, faster delivery.
           </p>
         </div>
       </section>

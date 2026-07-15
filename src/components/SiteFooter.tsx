@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-20">
           <div>
-            <div className="font-extrabold text-2xl tracking-tighter mb-6">BRANDORA</div>
+            <div className="font-extrabold text-2xl tracking-tighter mb-6">BRANDORAX</div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               The digital workforce pipeline for the next generation of African excellence.
             </p>
@@ -44,7 +44,7 @@ export function SiteFooter() {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-border gap-4">
           <p className="font-mono text-[10px] text-muted-foreground uppercase">
-            © {new Date().getFullYear()} Brandora Digital Ltd. Built for Africa.
+            © {new Date().getFullYear()} BrandoraX Digital Ltd. Built for Africa.
           </p>
           <div className="flex gap-8 font-mono text-[10px] text-muted-foreground uppercase">
             <a href="#" className="hover:text-foreground">Privacy</a>

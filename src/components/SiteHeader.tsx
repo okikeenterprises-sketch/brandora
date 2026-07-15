@@ -16,7 +16,7 @@ export function SiteHeader() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-12">
           <Link to="/" className="font-extrabold text-2xl tracking-tighter">
-            BRANDORA
+            BRANDORAX
           </Link>
           <div className="hidden md:flex gap-8 text-[13px] font-medium uppercase tracking-widest text-muted-foreground">
             {navLinks.map((l) => (

@@ -10,9 +10,9 @@ import employerImg from "@/assets/employer.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Brandora — Africa's Talent Engine" },
+      { title: "BrandoraX — Africa's Talent Engine" },
       { name: "description", content: "An outcome-driven digital workforce pipeline. Train, get placed, build with leading employers across Africa." },
-      { property: "og:title", content: "Brandora — Africa's Talent Engine" },
+      { property: "og:title", content: "BrandoraX — Africa's Talent Engine" },
       { property: "og:description", content: "Outcome-driven training and direct placement into startups, SMEs and enterprise teams." },
     ],
   }),
@@ -86,7 +86,7 @@ function Index() {
           </div>
         </div>
         <div className="absolute -bottom-16 left-0 w-full overflow-hidden pointer-events-none opacity-[0.03] select-none">
-          <div className="text-[24vw] font-extrabold tracking-tighter leading-none whitespace-nowrap">BRANDORA</div>
+          <div className="text-[24vw] font-extrabold tracking-tighter leading-none whitespace-nowrap">BRANDORAX</div>
         </div>
       </section>
 
@@ -179,7 +179,7 @@ function Index() {
             </Link>
           </div>
           <div className="relative">
-            <img src={employerImg} alt="Brandora team collaborating" loading="lazy" width={1280} height={800} className="w-full aspect-video object-cover outline-1 -outline-offset-1 outline-white/10" />
+            <img src={employerImg} alt="BrandoraX team collaborating" loading="lazy" width={1280} height={800} className="w-full aspect-video object-cover outline-1 -outline-offset-1 outline-white/10" />
             <div className="absolute -top-4 -right-4 size-32 border border-white/20 flex items-center justify-center p-4 text-center bg-foreground">
               <span className="text-[10px] uppercase font-bold tracking-widest leading-none">Vetted by Industry Standards</span>
             </div>
@@ -198,7 +198,7 @@ function Index() {
           </div>
           <div>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Free webinars, youth bootcamps and NGO partnerships expand digital opportunity across the continent. Brandora is a movement, not just an academy.
+              Free webinars, youth bootcamps and NGO partnerships expand digital opportunity across the continent. BrandoraX is a movement, not just an academy.
             </p>
             <Link to="/community" className="inline-flex items-center gap-3 text-sm font-bold uppercase tracking-widest border-b-2 border-foreground pb-1">
               Explore the community →

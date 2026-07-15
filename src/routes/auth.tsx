@@ -8,8 +8,8 @@ import { useAuth, type AppRole } from "@/lib/auth";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Sign in — Brandora" },
-      { name: "description", content: "Sign in or create your Brandora account to apply, hire, or manage your pipeline." },
+      { title: "Sign in — BrandoraX" },
+      { name: "description", content: "Sign in or create your BrandoraX account to apply, hire, or manage your pipeline." },
     ],
   }),
   component: AuthPage,
@@ -60,7 +60,7 @@ function AuthPage() {
       <section className="flex-1 px-6 py-24">
         <div className="max-w-md mx-auto">
           <div className="font-mono text-primary text-xs uppercase tracking-[0.3em] mb-6">
-            {mode === "signin" ? "Welcome back" : "Join Brandora"}
+            {mode === "signin" ? "Welcome back" : "Join BrandoraX"}
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tighter leading-[0.95] mb-10">
             {mode === "signin" ? "Sign in." : "Create your account."}
@@ -124,7 +124,7 @@ function AuthPage() {
           </button>
 
           <p className="mt-6 text-xs text-muted-foreground">
-            By continuing you agree to Brandora's terms. Need help? <Link to="/contact" className="underline">Contact us</Link>.
+            By continuing you agree to BrandoraX's terms. Need help? <Link to="/contact" className="underline">Contact us</Link>.
           </p>
         </div>
       </section>
